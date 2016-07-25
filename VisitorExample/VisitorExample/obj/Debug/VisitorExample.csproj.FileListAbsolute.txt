@@ -1,0 +1,6 @@
+C:\Users\Алена\Documents\Visual Studio 2013\Projects\VisitorExample\VisitorExample\bin\Debug\VisitorExample.exe.config
+C:\Users\Алена\Documents\Visual Studio 2013\Projects\VisitorExample\VisitorExample\bin\Debug\VisitorExample.exe
+C:\Users\Алена\Documents\Visual Studio 2013\Projects\VisitorExample\VisitorExample\bin\Debug\VisitorExample.pdb
+C:\Users\Алена\Documents\Visual Studio 2013\Projects\VisitorExample\VisitorExample\obj\Debug\VisitorExample.csprojResolveAssemblyReference.cache
+C:\Users\Алена\Documents\Visual Studio 2013\Projects\VisitorExample\VisitorExample\obj\Debug\VisitorExample.exe
+C:\Users\Алена\Documents\Visual Studio 2013\Projects\VisitorExample\VisitorExample\obj\Debug\VisitorExample.pdb
