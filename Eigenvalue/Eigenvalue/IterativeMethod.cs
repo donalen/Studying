@@ -142,7 +142,7 @@ namespace Eigenvalue
             ComplexNumbers[] Vector = this.vector;
             ComplexNumbers[] NextVector = this.matrix.Multiplication(Vector);
             ComplexNumbers[] Next2Vector = this.matrix.Multiplication(NextVector);
-            double resault, nextResault;
+            double result, nextResult;
             for (int i = 1; i < 1000; i++)
             {
                 value = ScalarProduct(Next2Vector, vector) / ScalarProduct(vector, vector);
@@ -150,12 +150,12 @@ namespace Eigenvalue
 
                 nextValue = ScalarProduct(NextVector, vector) / ScalarProduct(vector, vector);
 
-                resault = Math.Sqrt(value.Real);
-                nextResault = Math.Sqrt(nextValue.Real);
+                result = Math.Sqrt(value.Real);
+                nextResult = Math.Sqrt(nextValue.Real);
 
-                if (Math.Abs(nextResault - resault) < _h)
+                if (Math.Abs(nextResult - result) < _h)
                 {
-                    return new ComplexNumbers(nextResault, 0) / (int)Math.Pow(-1, i);
+                    return new ComplexNumbers(nextResult, 0) / (int)Math.Pow(-1, i);
                 }
             }
             return new ComplexNumbers(0, 0);
