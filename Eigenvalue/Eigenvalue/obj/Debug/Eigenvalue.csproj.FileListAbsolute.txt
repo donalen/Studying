@@ -7,30 +7,12 @@ c:\users\user\documents\visual studio 2015\Projects\Eigenvalue\Eigenvalue\obj\De
 c:\users\user\documents\visual studio 2015\Projects\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
 c:\users\user\documents\visual studio 2015\Projects\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
 c:\users\user\documents\visual studio 2015\Projects\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe.config
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.pdb
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csprojResolveAssemblyReference.cache
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Form1.resources
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Properties.Resources.resources
-C:\Users\Yuriy\Desktop\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
-H:\я\ВычМат\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe.config
-H:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
-H:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb
-H:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csprojResolveAssemblyReference.cache
-H:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Form1.resources
-H:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Properties.Resources.resources
-H:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
-H:\я\ВычМат\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe
-H:\я\ВычМат\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.pdb
-E:\я\ВычМат\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe.config
-E:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
-E:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb
-E:\я\ВычМат\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe
-E:\я\ВычМат\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.pdb
-E:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csprojResolveAssemblyReference.cache
-E:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Form1.resources
-E:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Properties.Resources.resources
-E:\я\ВычМат\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe.config
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.pdb
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csprojResolveAssemblyReference.cache
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Form1.resources
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Properties.Resources.resources
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
+C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb

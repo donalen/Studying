@@ -8,76 +8,185 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace Eigenvalue
 {
     public partial class Form1 : Form
     {
-        TextBox[,] matrixTextBox = new TextBox[4, 4];
+        /// <summary>
+        /// Создание Формы
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 4; j++)
-                    matrixTextBox[i, j] = new TextBox();
-            matrixTextBox[0, 0] = textBox1;
-            matrixTextBox[0, 1] = textBox2;
-            matrixTextBox[0, 2] = textBox3;
-            matrixTextBox[0, 3] = textBox4;
-            matrixTextBox[1, 0] = textBox5;
-            matrixTextBox[1, 1] = textBox6;
-            matrixTextBox[1, 2] = textBox7;
-            matrixTextBox[1, 3] = textBox8;
-            matrixTextBox[2, 0] = textBox9;
-            matrixTextBox[2, 1] = textBox10;
-            matrixTextBox[2, 2] = textBox11;
-            matrixTextBox[2, 3] = textBox12;
-            matrixTextBox[3, 0] = textBox13;
-            matrixTextBox[3, 1] = textBox14;
-            matrixTextBox[3, 2] = textBox15;
-            matrixTextBox[3, 3] = textBox16;
         }
-
+        /// <summary>
+        /// Обработка нажатия на клавишу
+        /// Создание матрицы и поиск ее наибольшего собственного значения по модулю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             try
-            { 
-                int size = Convert.ToInt32(comboBox1.SelectedItem);
-                Complex[,] matrix = new Complex[size, size];
-                for (int i = 0; i < size; i++)
-                    for (int j = 0; j < size; j++)
-                        matrix[i, j] = CheckingTheValue(matrixTextBox[i, j].Text);
-                Matrix matrix_ = new Matrix(size, matrix);
-                Method method = new Method(size, matrix_);
-                textBox17.Text = method.MainMethod().ToString();
+            {
+                if (Convert.ToString(comboBox1.SelectedItem) == "2")
+                {
+                    ComplexNumbers[,] matrix = new ComplexNumbers[2, 2];
+                    matrix[0, 0] = CheckingTheValue(textBox1.Text);
+                    matrix[0, 1] = CheckingTheValue(textBox2.Text);
+                    matrix[1, 0] = CheckingTheValue(textBox5.Text);
+                    matrix[1, 1] = CheckingTheValue(textBox6.Text);
+
+                    MatrixOperations matrix_ = new MatrixOperations(2, matrix);
+
+                    IterativeMethod method = new IterativeMethod(2, matrix_);
+                    textBox17.Text = method.Method_().Print();
+
+                }
+                if (Convert.ToString(comboBox1.SelectedItem) == "3")
+                {
+                    ComplexNumbers[,] matrix = new ComplexNumbers[3, 3];
+
+                    matrix[0, 0] = CheckingTheValue(textBox1.Text);
+                    matrix[0, 1] = CheckingTheValue(textBox2.Text);
+                    matrix[0, 2] = CheckingTheValue(textBox3.Text);
+                    matrix[1, 0] = CheckingTheValue(textBox5.Text);
+                    matrix[1, 1] = CheckingTheValue(textBox6.Text);
+                    matrix[1, 2] = CheckingTheValue(textBox7.Text);
+                    matrix[2, 0] = CheckingTheValue(textBox9.Text);
+                    matrix[2, 1] = CheckingTheValue(textBox10.Text);
+                    matrix[2, 2] = CheckingTheValue(textBox11.Text);
+
+                    MatrixOperations matrix_ = new MatrixOperations(3, matrix);
+
+                    IterativeMethod method = new IterativeMethod(3, matrix_);
+                    textBox17.Text = method.Method_().Print();
+
+
+                }
+                if (Convert.ToString(comboBox1.SelectedItem) == "4")
+                {
+                    ComplexNumbers[,] matrix = new ComplexNumbers[4, 4];
+
+                    matrix[0, 0] = CheckingTheValue(textBox1.Text);
+                    matrix[0, 1] = CheckingTheValue(textBox2.Text);
+                    matrix[0, 2] = CheckingTheValue(textBox3.Text);
+                    matrix[0, 3] = CheckingTheValue(textBox4.Text);
+                    matrix[1, 0] = CheckingTheValue(textBox5.Text);
+                    matrix[1, 1] = CheckingTheValue(textBox6.Text);
+                    matrix[1, 2] = CheckingTheValue(textBox7.Text);
+                    matrix[1, 3] = CheckingTheValue(textBox8.Text);
+                    matrix[2, 0] = CheckingTheValue(textBox9.Text);
+                    matrix[2, 1] = CheckingTheValue(textBox10.Text);
+                    matrix[2, 2] = CheckingTheValue(textBox11.Text);
+                    matrix[2, 3] = CheckingTheValue(textBox12.Text);
+                    matrix[3, 0] = CheckingTheValue(textBox13.Text);
+                    matrix[3, 1] = CheckingTheValue(textBox14.Text);
+                    matrix[3, 2] = CheckingTheValue(textBox15.Text);
+                    matrix[3, 3] = CheckingTheValue(textBox16.Text);
+
+                    MatrixOperations matrix_ = new MatrixOperations(4, matrix);
+
+                    IterativeMethod method = new IterativeMethod(4, matrix_);
+                    textBox17.Text = method.Method_().Print();
+
+
+                }
             }
             catch
             {
-                MessageBox.Show("Введены некорректные данные", "Ошибка");
+                textBox17.Text = "Неверные данные";
             }
         }
-
+        /// <summary>
+        /// Выбор значения из списка
+        /// Активирует нужные окна ввода
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {            
-            int size = Convert.ToInt32(comboBox1.SelectedItem);
-            if(size <= 4 && size > 1)
-                button1.Enabled = true;          
-            for (int i = 0; i < 4; i++)
-                for (int j = 0; j < 4; j++)
-                    matrixTextBox[i, j].Enabled = false;
-            for (int i = 0; i<size; i++)
-                for(int j = 0; j<size; j++)
-                    matrixTextBox[i, j].Enabled = true;
-        }
-
-        private Complex CheckingTheValue(string value)//обработка введённых данных
         {
+            if (Convert.ToString(comboBox1.SelectedItem) == "2")
+            {
+                button1.Enabled = true;
+                textBox1.Enabled = true;
+                textBox2.Enabled = true;
+                textBox3.Enabled = false;
+                textBox4.Enabled = false;
+                textBox5.Enabled = true;
+                textBox6.Enabled = true;
+                textBox7.Enabled = false;
+                textBox8.Enabled = false;
+                textBox9.Enabled = false;
+                textBox10.Enabled = false;
+                textBox11.Enabled = false;
+                textBox12.Enabled = false;
+                textBox13.Enabled = false;
+                textBox14.Enabled = false;
+                textBox15.Enabled = false;
+                textBox16.Enabled = false;
+
+            }
+
+            if (Convert.ToString(comboBox1.SelectedItem) == "3")
+            {
+                button1.Enabled = true;
+                textBox1.Enabled = true;
+                textBox2.Enabled = true;
+                textBox3.Enabled = true;
+                textBox4.Enabled = false;
+                textBox5.Enabled = true;
+                textBox6.Enabled = true;
+                textBox7.Enabled = true;
+                textBox8.Enabled = false;
+                textBox9.Enabled = true;
+                textBox10.Enabled = true;
+                textBox11.Enabled = true;
+                textBox12.Enabled = false;
+                textBox13.Enabled = false;
+                textBox14.Enabled = false;
+                textBox15.Enabled = false;
+                textBox16.Enabled = false;
+
+            }
+
+            if (Convert.ToString(comboBox1.SelectedItem) == "4")
+            {
+                button1.Enabled = true;
+                textBox1.Enabled = true;
+                textBox2.Enabled = true;
+                textBox3.Enabled = true;
+                textBox4.Enabled = true;
+                textBox5.Enabled = true;
+                textBox6.Enabled = true;
+                textBox7.Enabled = true;
+                textBox8.Enabled = true;
+                textBox9.Enabled = true;
+                textBox10.Enabled = true;
+                textBox11.Enabled = true;
+                textBox12.Enabled = true;
+                textBox13.Enabled = true;
+                textBox14.Enabled = true;
+                textBox15.Enabled = true;
+                textBox16.Enabled = true;
+
+            }
+        }
+        /// <summary>
+        /// Метод CheckingTheValue
+        /// Обрабатывает введенную строку
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        private ComplexNumbers CheckingTheValue(string value)
+        {
+
             value = value.Replace(" ", "");
             string realPart = "";
             string imagPart = "";
             double result;
             if ((Double.TryParse(value, out result)))
-                return new Complex(result, 0);
+                return new ComplexNumbers(result, 0);
             if (value[value.Length - 1] == 'i')
             {
                 if (value.Contains('+'))
@@ -85,14 +194,9 @@ namespace Eigenvalue
                 imagPart = value.Substring(value.IndexOf("+") + 1).Trim(new char[] { 'i' });
             }
             if ((Double.TryParse(realPart, out result)))
-                return new Complex(result, Double.Parse(imagPart));
+                return new ComplexNumbers(result, Double.Parse(imagPart));
             else
-                return new Complex(0, Double.Parse(imagPart));
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+                return new ComplexNumbers(0, Double.Parse(imagPart));
         }
     }
 }
