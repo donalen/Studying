@@ -16,3 +16,12 @@ C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Deb
 C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
 C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
 C:\Users\Алена\Favorites\Downloads\Eigenvalue\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe.config
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.exe
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\bin\Debug\Eigenvalue.pdb
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csprojResolveAssemblyReference.cache
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Form1.resources
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.Properties.Resources.resources
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.csproj.GenerateResource.Cache
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.exe
+C:\Users\Алена\Documents\GitHub\Studying\Eigenvalue\Eigenvalue\obj\Debug\Eigenvalue.pdb

@@ -49,7 +49,13 @@ namespace Eigenvalue
             return new ComplexNumbers((c1._realPart * c2._realPart + c1._imaginaryPart * c2._imaginaryPart) / (Math.Pow(c2._realPart, 2) + Math.Pow(c2._imaginaryPart, 2)),
                 (c2._realPart * c1._imaginaryPart - c1._realPart * c2._imaginaryPart) / (Math.Pow(c2._realPart, 2) + Math.Pow(c2._imaginaryPart, 2)));
         }
-        
+
+        // Переопределение операции деления для комплексных чисел на целое число
+        public static ComplexNumbers operator /(ComplexNumbers c1, int c2)// деление на целое число
+        {
+            return new ComplexNumbers(c1._realPart / c2, c1._imaginaryPart / c2);
+        }
+
         // Возвращает модуль комплексного числа
         public double Abc()
         {
